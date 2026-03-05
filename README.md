@@ -1,4 +1,4 @@
-# Projekt Neve
+# Typescript tanulása Szakmai vizsga elött
 
 ## 📊 Időbélyegek & Haladás
 
