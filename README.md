@@ -5,7 +5,8 @@
 | Feladatkör | Eltöltött idő | Állapot |
 | :--- | :--- | :--- |
 | **Adatbázis** | 20 perc | ✅ Kész |
-| **Frontend** | 136 perc | 🚧 Folyamatban |
+| **Backend** | 106 perc | 🚧 Folyamatban |
+| **Frontend** | 30 perc | 🚧 Folyamatban |
 | **C# fejlesztés** | 0 perc | ⏳ Tervben |
 
 ---
