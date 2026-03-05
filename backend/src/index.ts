@@ -21,7 +21,7 @@ const envSchema = z.object({
   DB_USER: z.string().min(1)
     .default('root'), // alapéretelezettem be állítja a root-ot.
   DB_PASSWORD: z.string(), // engedéjez üres string-et is, ha nincs a servernek jelszava.
-  DB_NAME: z.string().min(1).default('typescript_learning'),
+  DB_NAME: z.string().min(1).default('konyvtar_fdt'),
   PORT: z.coerce.number().default(3000), // a szerver backend portja, ha nincs megadva a .env-ben akkor az alapértelmezett porton ami a 3000 fog futni.
 })
 
@@ -54,7 +54,9 @@ app.use('*', async (c, next) => {
   await next() // megvárja, hogy a handler lefusson.
 
   const LogEntry = {
-    timestamp: new Date().toISOString(), // a log befejezésének időpontja.
+    // a log befejezésének időpontja. 
+    timestamp: new Date()
+    .toISOString(), // átalakítja egy ISO formátumú stringgé a könyebb olvashatóságért.
     methood: c.req.method, // a request methodja.
     path: c.req.path, // a request útvonala.
     status: c.res.status, // a response statusa.
@@ -71,7 +73,7 @@ app.use('*', async (c, next) => {
 
 // endpontok
 
-app.get()
+app.get('')
 
 serve({
   fetch: app.fetch,
