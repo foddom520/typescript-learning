@@ -26,7 +26,7 @@
 - Adatbázishoz való csatlakozás tesztelése.
 - Logolás a `data.json` fájlba megírva és tesztelve.
 
-### 💻 Frontend
+### 💻 Frontend (React Typescript)
 - Frontend felépítve, kiürítés után az alapok felállítva.
 - 3 komponens fájljai elkezdve.
 - `app.tsx`-ben a navbar megírva a route-okkal.
