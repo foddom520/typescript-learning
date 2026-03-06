@@ -57,7 +57,7 @@ app.use('*', async (c, next) => {
     // a log befejezésének időpontja. 
     timestamp: new Date()
     .toISOString(), // átalakítja egy ISO formátumú stringgé a könyebb olvashatóságért.
-    methood: c.req.method, // a request methodja.
+    method: c.req.method, // a request methodja.
     path: c.req.path, // a request útvonala.
     status: c.res.status, // a response statusa.
   }
